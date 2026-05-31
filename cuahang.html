@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <a href="giohang.html">
+                    🛒 Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li id="userInfo"></li>
+
+            <li id="logoutBtn" style="display:none;">
+                <a href="#" onclick="logout()">
+                    Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<section class="shop">
+
+    <h1>Cửa Hàng Dụng Cụ Câu Cá</h1>
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Tìm sản phẩm..."
+           onkeyup="searchProduct()">
+
+    <div class="product-container">
+
+        <div class="card product">
+        <img src="https://picsum.photos/300/200?11">
+        <h3>Cần Câu Carbon</h3>
+        <p>1.500.000 VNĐ</p>
+        <button onclick="addToCart('Cần Câu Carbon',1500000)">
+            Thêm Giỏ Hàng
+        </button>
+        </div>
+
+        <div class="card product">
+            <img src="https://picsum.photos/300/200?12">
+            <h3>Máy Câu Shimano</h3>
+            <p>2.300.000 VNĐ</p>
+            <button onclick="addToCart('Máy Câu Shimano',2300000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="https://picsum.photos/300/200?13">
+            <h3>Mồi Giả Cá Lóc</h3>
+            <p>250.000 VNĐ</p>
+            <button onclick="addToCart('Mồi Giả Cá Lóc',250000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="https://picsum.photos/300/200?14">
+            <h3>Dây Câu PE</h3>
+            <p>350.000 VNĐ</p>
+            <button onclick="addToCart('Dây Câu PE',350000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="https://picsum.photos/300/200?15">
+            <h3>Lưỡi Câu Nhật</h3>
+            <p>120.000 VNĐ</p>
+            <button onclick="addToCart('Lưỡi Câu Nhật',120000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="https://picsum.photos/300/200?16">
+            <h3>Hộp Đựng Mồi</h3>
+            <p>180.000 VNĐ</p>
+            <button onclick="addToCart('Hộp Đựng Mồi',180000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+    </div>
+
+</section>
+<div id="toast" class="toast">
+    ✅ Đã thêm vào giỏ hàng!
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
