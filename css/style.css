@@ -1,0 +1,933 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* ================= MENU ================= */
+
+nav{
+background:#00695c;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+nav ul li a:hover{
+    color:#ffd54f;
+    background:rgba(255,255,255,0.1);
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+    height:450px;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.features{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+
+    padding:50px 20px;
+
+    background:white;
+
+    position:relative;
+    z-index:10;
+}
+
+.slide.active{
+    display:flex;
+}
+
+.slide1{
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)
+    ),
+    url("../images/cancau.jpg");
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide2{
+       background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)
+    ),
+    url("../images/calon.jpg");
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide3{
+    background:
+    linear-gradient(
+    rgba(0,0,0,.6),
+    rgba(0,0,0,.6)
+    ),
+    url("../images/hocauu.jpg");
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.slide h1{
+    font-size:clamp(36px,5vw,60px);
+    font-weight:bold;
+    margin-bottom:20px;
+    text-shadow:3px 3px 15px rgba(0,0,0,.5);
+
+    max-width:90%;
+    line-height:1.2;
+
+    text-align:center;
+}
+
+.slide p{
+    font-size:24px;
+    max-width:800px;
+
+    text-align:center;
+    margin:0 auto;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+
+    padding:15px 35px;
+    border-radius:30px;
+
+    font-size:20px;
+    font-weight:bold;
+
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#f57c00;
+    transform:scale(1.05);
+}
+
+/* ================= SẢN PHẨM ================= */
+
+.products{
+padding:50px;
+}
+
+.products h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.product-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+width:300px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+}
+
+.card h3{
+padding:15px;
+}
+
+.card p{
+padding:0 15px 15px;
+}
+
+.card button{
+margin:15px;
+padding:10px 20px;
+background:#00695c;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+transition:.3s;
+}
+
+.card button:hover{
+background:#004d40;
+transform:scale(1.05);
+}
+
+/* ================= CỬA HÀNG ================= */
+
+.shop{
+padding:40px;
+text-align:center;
+}
+
+.shop h1{
+margin-bottom:20px;
+}
+
+#searchInput{
+width:350px;
+padding:12px;
+margin-bottom:30px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+/* ================= GIỎ HÀNG ================= */
+
+.cart-section{
+padding:40px;
+text-align:center;
+}
+
+.cart-item{
+background:white;
+width:400px;
+margin:15px auto;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.cart-item h3{
+margin-bottom:10px;
+}
+.cart-buttons{
+    margin-top:20px;
+}
+
+.cart-buttons button{
+    padding:12px 25px;
+    margin:10px;
+
+    border:none;
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+.checkout-btn{
+    background:#28a745;
+    color:white;
+}
+
+.checkout-btn:hover{
+    background:#218838;
+}
+
+.customer-info{
+    width:400px;
+    margin:40px auto;
+
+    background:white;
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+.customer-info h3{
+    margin-bottom:20px;
+}
+
+.customer-info input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+    border-radius:6px;
+
+    box-sizing:border-box;
+}
+
+/* ================= TOAST ================= */
+
+.toast{
+position:fixed;
+top:20px;
+right:20px;
+background:#28a745;
+color:white;
+padding:15px 25px;
+border-radius:8px;
+font-weight:bold;
+opacity:0;
+visibility:hidden;
+transition:.4s;
+z-index:9999;
+}
+
+.toast.show{
+opacity:1;
+visibility:visible;
+}
+
+/* ================= ĐĂNG NHẬP ================= */
+
+.login-box{
+width:500px;
+margin:60px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.login-box h1,
+.login-box h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.login-box input{
+width:100%;
+padding:14px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+.login-option{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:15px 0 20px;
+}
+
+.remember-me{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:16px;
+}
+
+.remember-me input{
+width:18px;
+height:18px;
+margin:0;
+}
+
+.login-option a{
+color:#00695c;
+text-decoration:none;
+font-weight:bold;
+}
+
+.login-option a:hover{
+text-decoration:underline;
+}
+
+.login-box button{
+width:100%;
+padding:15px;
+background:#00695c;
+color:white;
+border:none;
+border-radius:10px;
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.login-box button:hover{
+background:#004d40;
+transform:scale(1.02);
+}
+
+.register-link{
+text-align:center;
+margin-top:20px;
+}
+
+.register-link a{
+color:#00695c;
+text-decoration:none;
+font-weight:bold;
+}
+
+.register-link a:hover{
+text-decoration:underline;
+}
+
+/* ================= KHÁCH MỚI ================= */
+
+.choice-box{
+width:500px;
+margin:80px auto;
+background:white;
+padding:40px;
+text-align:center;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.choice-box p{
+margin:20px 0;
+}
+
+.choice-box button{
+margin:10px;
+padding:15px 25px;
+}
+
+
+/* ================= GIỚI THIỆU ================= */
+
+.about{
+width:90%;
+max-width:1200px;
+margin:40px auto;
+}
+
+.about-header{
+background:linear-gradient(135deg,#00695c,#009688);
+color:white;
+text-align:center;
+padding:60px 20px;
+border-radius:15px;
+margin-bottom:30px;
+}
+
+.about-header h1{
+font-size:50px;
+margin-bottom:15px;
+}
+
+.about-header p{
+font-size:22px;
+}
+
+.about-box{
+background:white;
+padding:30px;
+margin-bottom:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.about-box h2{
+color:#00695c;
+margin-bottom:15px;
+}
+
+.about-box p{
+line-height:1.8;
+text-align:justify;
+}
+
+.about-box ul{
+margin-left:25px;
+line-height:2;
+}
+
+.about-box li{
+margin-bottom:8px;
+}
+
+/* ================= TRANG CHỦ ================= */
+
+.features{
+display:flex;
+justify-content:center;
+gap:25px;
+padding:50px;
+flex-wrap:wrap;
+}
+
+.feature-box{
+width:300px;
+background:white;
+padding:25px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.feature-box:hover{
+transform:translateY(-10px);
+}
+
+.feature-box h3{
+color:#00695c;
+margin-bottom:10px;
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:50px;
+background:#00695c;
+color:white;
+flex-wrap:wrap;
+}
+
+.stat-box{
+text-align:center;
+}
+
+.stat-box h2{
+font-size:40px;
+}
+
+.about-home{
+width:85%;
+margin:50px auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.about-home h2{
+color:#00695c;
+margin-bottom:15px;
+}
+
+.about-home p{
+line-height:1.8;
+margin-bottom:10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#00695c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes slideDown{
+from{
+opacity:0;
+transform:translateY(-80px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@keyframes zoomIn{
+from{
+opacity:0;
+transform:scale(0.5);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+.contact-container{
+width:90%;
+margin:40px auto;
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.contact-info,
+.contact-form{
+flex:1;
+min-width:350px;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.contact-info h2,
+.contact-form h2{
+color:#00695c;
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin-bottom:15px;
+font-size:18px;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.contact-form textarea{
+height:150px;
+resize:none;
+}
+
+.contact-form button{
+width:100%;
+padding:12px;
+background:#00695c;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-form button:hover{
+background:#004d40;
+transform:scale(1.02);
+}
+.register-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.register-link a{
+    color:#00695c;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+.products{
+    padding:70px 20px;
+    background:#f5f5f5;
+}
+
+.products h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.product-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:350px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    position:relative;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px 20px 5px;
+}
+
+.price{
+    color:#e53935;
+    font-size:28px;
+    font-weight:bold;
+    padding:0 20px;
+}
+
+.card button{
+    width:85%;
+    margin:20px auto;
+    display:block;
+
+    padding:12px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#00796b;
+    color:white;
+
+    cursor:pointer;
+}
+
+.card button:hover{
+    background:#005f56;
+}
+
+.hot{
+    position:absolute;
+    top:10px;
+    left:10px;
+
+    background:red;
+    color:white;
+
+    padding:5px 10px;
+    border-radius:20px;
+
+    font-size:12px;
+    font-weight:bold;
+}
+.back-home{
+    text-align:center;
+    margin:30px 0;
+}
+
+.back-home a{
+    background:#00796b;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.back-home a:hover{
+    background:#009688;
+}
+body{
+    background:#f4f6f9;
+    font-family:Arial, sans-serif;
+}
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.header{
+    background:linear-gradient(135deg,#00796b,#009688);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+.lab-menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin:30px 0;
+}
+
+.lab-menu button{
+    padding:12px 22px;
+    border:none;
+    border-radius:30px;
+    background:#00796b;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.lab-menu button:hover{
+    background:#009688;
+    transform:translateY(-3px);
+}
+
+.lab-content{
+    display:none;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.lab-card{
+    width:280px;
+    min-height:180px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.lab-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.25);
+}
+
+.lab-card h3{
+    color:#00796b;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.lab-card a{
+    display:inline-block;
+
+    padding:12px 25px;
+
+    background:#ff9800;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.lab-card a:hover{
+    background:#f57c00;
+    transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+    .header h1{
+        font-size:28px;
+    }
+
+    .lab-card{
+        width:100%;
+    }
+
+}
+
+

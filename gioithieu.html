@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <a href="giohang.html">
+                    🛒 Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+            <li><a href="labthuchanh.html">Bài Thực Hành</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li id="userInfo"></li>
+
+            <li id="logoutBtn" style="display:none;">
+                <a href="#" onclick="logout()">
+                    Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<section class="banner">
+
+    <div class="slide active slide1">
+        <h1>🎣 CẦN CÂU CARBON CAO CẤP</h1>
+        <p>Nhẹ - Bền - Hiệu suất cao cho mọi chuyến đi câu</p>
+
+        <a href="cuahang.html" class="btn">
+            Mua Ngay
+        </a>
+    </div>
+
+    <div class="slide slide2">
+        <h1>🐟 CÁ KHỦNG ĐANG CHỜ BẠN</h1>
+        <p>Trang bị dụng cụ tốt nhất để chinh phục những chiến lợi phẩm lớn</p>
+
+        <a href="cuahang.html" class="btn">
+            Khám Phá Ngay
+        </a>
+    </div>
+
+    <div class="slide slide3">
+        <h1>🌊 HỒ CÂU CHUYÊN NGHIỆP</h1>
+        <p>Không gian lý tưởng để thư giãn và tận hưởng niềm đam mê câu cá</p>
+
+        <a href="gioithieu.html" class="btn">
+            Tìm Hiểu Thêm
+        </a>
+    </div>
+
+</section>
+
+
+<section class="products">
+
+<h2>🔥 Sản Phẩm Bán Chạy Nhất Tháng</h2>
+
+<div class="product-container">
+
+    <div class="card">
+
+        <span class="hot">HOT</span>
+
+        <img src="images/cancaukaiwo.webp">
+        <h3>Cần Câu KAIWO Chiến Kỳ 2025 Bản Săn Hàng</h3>
+        <p>12.300.000 VNĐ</p>
+        <button onclick="addToCart('Cần Câu KAIWO Chiến Kỳ 2025 Bản Săn Hàng',12300000)">
+            Thêm Giỏ Hàng
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <span class="hot">HOT</span>
+
+        <img src="images/dcc.png">
+        <h3>Dây Câu Cao Cấp RYUKI Merlion</h3>
+        <p>380.000 VNĐ</p>
+        <button onclick="addToCart('Dây Câu Cao Cấp RYUKI Merlion',380000)">
+            Thêm Giỏ Hàng
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <span class="hot">MỚI</span>
+
+        <img src="images/maycau2.jpg">
+        <h3>Máy Câu Ikada OURBEST CN-08</h3>
+        <p>7.380.000 VNĐ</p>
+        <button onclick="addToCart('Máy Câu Ikada OURBEST CN-08',7380000)">
+            Thêm Giỏ Hàng
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+<section class="about-box" style="width:90%;margin:auto;margin-bottom:40px;">
+    <h2>Vì Sao Chọn Fishing Shop?</h2>
+
+
+<p>
+    Fishing Shop là địa chỉ tin cậy dành cho những người yêu thích câu cá, từ người mới bắt đầu đến
+    các cần thủ giàu kinh nghiệm. Chúng tôi chuyên cung cấp các sản phẩm chất lượng cao như cần câu,
+    máy câu, mồi câu và nhiều phụ kiện câu cá chính hãng đến từ các thương hiệu uy tín.
+
+    Với phương châm đặt sự hài lòng của khách hàng lên hàng đầu, Fishing Shop cam kết mang đến những
+    sản phẩm bền bỉ, hiệu suất cao cùng mức giá hợp lý. Bên cạnh đó, chúng tôi luôn áp dụng chính sách
+    bảo hành rõ ràng, hỗ trợ tư vấn tận tình và dịch vụ chăm sóc khách hàng chuyên nghiệp nhằm giúp khách
+    hàng lựa chọn được sản phẩm phù hợp nhất với nhu cầu của mình.
+
+    Không chỉ là nơi mua sắm dụng cụ câu cá, Fishing Shop còn mong muốn trở thành người bạn đồng hành trên 
+    mọi hành trình chinh phục những mẻ cá lớn và những khoảnh khắc thư giãn bên thiên nhiên. 
+    Sự tin tưởng và ủng hộ của khách hàng chính là động lực để chúng tôi không ngừng cải thiện chất lượng
+    sản phẩm và dịch vụ mỗi ngày.
+</p>
+
+
+</section>
+
+<footer>
+    <p>© 2026 Fishing Shop - All Rights Reserved</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <a href="giohang.html">
+                    🛒 Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+            <li><a href="labthuchanh.html">Bài Thực Hành</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li id="userInfo"></li>
+
+            <li id="logoutBtn" style="display:none;">
+                <a href="#" onclick="logout()">
+                    Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<div class="choice-box" id="choiceBox">
+
+    <h1>🎣 Fishing Shop</h1>
+
+    <p>Bạn là khách mới hay khách quen?</p>
+
+    <button onclick="showLogin()">
+        Bạn đã có tài khoản (Đăng nhập)
+    </button>
+
+    <button onclick="showRegister()">
+        Bạn chưa có tài khoản (Đăng ký)
+    </button>
+
+</div>
+
+<div class="login-box" id="loginBox" style="display:none;">
+
+
+<h1>🎣 Fishing Shop</h1>
+
+<h2>Đăng Nhập</h2>
+
+<input type="text"
+       id="username"
+       placeholder="Tên đăng nhập">
+
+<input type="password"
+       id="password"
+       placeholder="Mật khẩu">
+<div class="login-option">
+
+   <label class="remember-me">
+        <input type="checkbox">
+        Ghi nhớ đăng nhập
+    </label>
+
+    <a href="#" onclick="forgotPassword()">
+        Quên mật khẩu?
+    </a>
+
+</div>
+
+<button onclick="login()">
+    Đăng Nhập
+</button>
+
+
+</div>
+
+
+<div class="login-box" id="registerBox" style="display:none;">
+
+<h1>🎣 Fishing Shop</h1>
+
+<h2>Đăng Ký Tài Khoản</h2>
+
+<input type="text"
+       id="newUser"
+       placeholder="Tên đăng nhập">
+
+<input type="email"
+       id="newEmail"
+       placeholder="Email">
+
+<input type="password"
+       id="newPass"
+       placeholder="Mật khẩu">
+
+<input type="password"
+       id="confirmPass"
+       placeholder="Nhập lại mật khẩu">
+
+<button onclick="register()">
+    Đăng Ký
+</button>
+
+<p class="register-link">
+    Đã có tài khoản?
+
+    <a href="#" onclick="showLogin()">
+        Đăng nhập ngay
+    </a>
+</p>
+
+
+</div>
+<div id="toast" class="toast"></div>
+<script src="js/main.js"></script>
+
+</body>
+</html>

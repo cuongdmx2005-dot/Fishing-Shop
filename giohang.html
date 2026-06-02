@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <a href="giohang.html">
+                    🛒 Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+            <li><a href="labthuchanh.html">Bài Thực Hành</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li id="userInfo"></li>
+
+            <li id="logoutBtn" style="display:none;">
+                <a href="#" onclick="logout()">
+                    Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<section class="cart-section">
+
+    <h1>🛒 Giỏ Hàng</h1>
+
+    <div id="cartItems"></div>
+
+    <h2 id="totalPrice">
+        Tổng tiền: 0 VNĐ
+    </h2>
+
+    <div class="cart-buttons">
+
+        <button onclick="clearCart()">
+            🗑️ Xóa Giỏ Hàng
+        </button>
+
+        <button class="checkout-btn"
+                onclick="checkout()">
+            💳 Thanh Toán
+        </button>
+
+    </div>
+
+    <div class="customer-info">
+
+        <h3>Thông Tin Khách Hàng</h3>
+
+        <input type="text"
+               placeholder="Họ và tên">
+
+        <input type="text"
+               placeholder="Số điện thoại">
+
+        <input type="text"
+               placeholder="Địa chỉ nhận hàng">
+
+    </div>
+
+</section>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

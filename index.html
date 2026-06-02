@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li>
+                <a href="giohang.html">
+                    🛒 Giỏ hàng (<span id="cartCount">0</span>)
+                </a>
+            </li>
+            <li><a href="labthuchanh.html">Bài Thực Hành</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+            <li id="userInfo"></li>
+
+            <li id="logoutBtn" style="display:none;">
+                <a href="#" onclick="logout()">
+                    Đăng xuất
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+
+<section class="banner">
+
+    <div class="slide active slide1">
+        <h1>🎣 CẦN CÂU CARBON CAO CẤP</h1>
+        <p>Nhẹ - Bền - Hiệu suất cao</p>
+    </div>
+
+    <div class="slide slide2">
+        <h1>🐟 CÁ KHỦNG ĐANG CHỜ BẠN</h1>
+        <p>Trải nghiệm câu cá đỉnh cao</p>
+    </div>
+
+    <div class="slide slide3">
+        <h1>🌊 HỒ CÂU CHUYÊN NGHIỆP</h1>
+        <p>Địa điểm lý tưởng cho mọi cần thủ</p>
+    </div>
+
+</section>
+
+
+<section class="features">
+
+
+<div class="feature-box">
+    <h3>🚚 Giao Hàng Toàn Quốc</h3>
+    <p>Nhanh chóng - An toàn - Tiện lợi</p>
+</div>
+
+<div class="feature-box">
+    <h3>✅ Chính Hãng 100%</h3>
+    <p>Cam kết chất lượng và bảo hành</p>
+</div>
+
+<div class="feature-box">
+    <h3>💬 Hỗ Trợ 24/7</h3>
+    <p>Tư vấn tận tâm cho khách hàng</p>
+</div>
+
+
+</section>
+
+<section class="products">
+
+
+<h2>Sản Phẩm Nổi Bật</h2>
+
+<div class="product-container">
+
+    <div class="card">
+        <img src="../images/cancau1.jpg" alt="Cần câu">
+        <h3>Cần Câu Carbon</h3>
+        <p>1.500.000 VNĐ</p>
+    </div>
+
+    <div class="card">
+        <img src="images/maycau.jpg" alt="Máy câu">
+        <h3>Máy Câu Shimano</h3>
+        <p>2.300.000 VNĐ</p>
+    </div>
+
+    <div class="card">
+        <img src="images/moigia.jpg" alt="Mồi câu">
+        <h3>Mồi Giả Cá Lóc</h3>
+        <p>250.000 VNĐ</p>
+    </div>
+    <div class="card">
+        <img src="images/hopdung.jpg" alt="Hộp đựng">
+        <h3>Hộp Đựng Mồi Giả Cá Lóc</h3>
+        <p>150.000 VNĐ</p>
+    </div>
+
+</div>
+
+
+</section>
+
+<section class="stats">
+
+
+<div class="stat-box">
+    <h2>500+</h2>
+    <p>Sản phẩm</p>
+</div>
+
+<div class="stat-box">
+    <h2>1000+</h2>
+    <p>Khách hàng</p>
+</div>
+
+<div class="stat-box">
+    <h2>24/7</h2>
+    <p>Hỗ trợ</p>
+</div>
+
+
+</section>
+
+<section class="about-home">
+
+
+<h2>Tại Sao Chọn Fishing Shop?</h2>
+
+<p>
+    Fishing Shop là địa chỉ tin cậy dành cho những người yêu thích bộ môn câu cá.
+    Chúng tôi cung cấp đa dạng sản phẩm chất lượng cao, giá cả hợp lý cùng dịch vụ
+    chăm sóc khách hàng chuyên nghiệp.
+</p>
+
+<p>
+    Với đội ngũ giàu kinh nghiệm và niềm đam mê câu cá, Fishing Shop luôn mong muốn
+    mang đến những trải nghiệm mua sắm tốt nhất cho cộng đồng cần thủ Việt Nam.
+</p>
+
+
+</section>
+
+<footer>
+    <p>© 2026 Fishing Shop - All Rights Reserved</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🎣 Fishing Shop</div>
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="cuahang.html">Cửa hàng</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+            <li><a href="giohang.html">Giỏ hàng</a></li>
+            <li><a href="labthuchanh.html">Bài Thực Hành</a></li>
+            <li><a href="dangnhap.html">Đăng nhập</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="shop">
+
+    <h1>Cửa Hàng Dụng Cụ Câu Cá</h1>
+
+   <input
+    type="text"
+    id="searchInput"
+    placeholder="Tìm sản phẩm..."
+    onkeyup="searchProduct()">
+
+    <div class="product-container">
+
+        <div class="card product">
+        <img src="images/cancaulure.png">
+        <h3>Cần Câu Lure MSS Magic Combo và Cần Máy Đứng</h3>
+        <p>1.500.000 VNĐ</p>
+        <button onclick="addToCart('Cần Câu Lure MSS Magic Combo và Cần Máy Đứng',1500000)">
+            Thêm Giỏ Hàng
+        </button>
+        </div>
+
+        <div class="card product">
+            <img src="images/cancaukaiwo.webp">
+            <h3>Cần Câu KAIWO Chiến Kỳ 2025 – Bản Săn Hàng</h3>
+            <p>12.300.000 VNĐ</p>
+            <button onclick="addToCart('Cần Câu KAIWO Chiến Kỳ 2025 – Bản Săn Hàng',12300000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="images/canchinhdo.webp">
+            <h3>Cần Câu KAIWO Chinh Đồ (Bản Thi Đấu)</h3>
+            <p>1.250.000 VNĐ</p>
+            <button onclick="addToCart('Cần Câu KAIWO Chinh Đồ (Bản Thi Đấu)',1250000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="images/cancautva.webp">
+            <h3>Cần Câu KAIWO Thủy Vô Ảnh 3.5H</h3>
+            <p>350.000 VNĐ</p>
+            <button onclick="addToCart('Cần Câu KAIWO Thủy Vô Ảnh 3.5H',350000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="images/truc.webp">
+            <h3>Trục Làm Sẵn HANDING PRO</h3>
+            <p>120.000 VNĐ</p>
+            <button onclick="addToCart('Trục Làm Sẵn HANDING PRO',120000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        <div class="card product">
+            <img src="images/truc2.webp">
+            <h3>Dây Câu Cá Cao Cấp RYUKI Max</h3>
+            <p>180.000 VNĐ</p>
+            <button onclick="addToCart('Dây Câu Cá Cao Cấp RYUKI Max',180000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/truc3.png">
+            <h3>Trục Câu Săn Hàng RYUKI Cao Cấp</h3>
+            <p>180.000 VNĐ</p>
+            <button onclick="addToCart('Trục Câu Săn Hàng RYUKI Cao Cấp',180000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+         <div class="card product">
+            <img src="images/dcc.png">
+            <h3>Dây Câu Cao Cấp RYUKI Merlion</h3>
+            <p>380.000 VNĐ</p>
+            <button onclick="addToCart('Dây Câu Cao Cấp RYUKI Merlion',380000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/truc4.webp">
+            <h3>Trục Làm Sẵn RYUKI S25</h3>
+            <p>380.000 VNĐ</p>
+            <button onclick="addToCart('Trục Làm Sẵn RYUKI S25',380000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/day.webp">
+            <h3>Dây PE Đầu Cần RYUKI</h3>
+            <p>80.000 VNĐ</p>
+            <button onclick="addToCart('Dây PE Đầu Cần RYUKI',80000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/maycau1.jpg">
+            <h3>Máy Câu Ikada OURBEST CN-07</h3>
+            <p>4.380.000 VNĐ</p>
+            <button onclick="addToCart('Máy Câu Ikada OURBEST CN-07',4380000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/maycau2.jpg">
+            <h3>Máy Câu Ikada OURBEST CN-08</h3>
+            <p>7.380.000 VNĐ</p>
+            <button onclick="addToCart('Máy Câu Ikada OURBEST CN-08',7380000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/maycau3.jpg">
+            <h3>Máy Câu Ikada OURBEST CN-09</h3>
+            <p>9.380.000 VNĐ</p>
+            <button onclick="addToCart('Máy Câu Ikada OURBEST CN-09',9380000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/l1.png">
+            <h3>Lưỡi Có Ngạnh Săn Hàng RYUKI Shark</h3>
+            <p>60.000 VNĐ</p>
+            <button onclick="addToCart('Lưỡi Có Ngạnh Săn Hàng RYUKI Shark',60000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/l2.webp">
+            <h3>Lưỡi Không Ngạnh Câu Rô Phi RYUKI Tilapia</h3>
+            <p>60.000 VNĐ</p>
+            <button onclick="addToCart('Lưỡi Không Ngạnh Câu Rô Phi RYUKI Tilapia',60000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+        <div class="card product">
+            <img src="images/l3.png">
+            <h3>Lưỡi Câu Săn Hàng RYUKI Bison</h3>
+            <p>30.000 VNĐ</p>
+            <button onclick="addToCart('Lưỡi Câu Săn Hàng RYUKI Bison',30000)">
+                Thêm Giỏ Hàng
+            </button>
+        </div>
+
+        
+        
+
+    </div>
+
+</section>
+<div id="toast" class="toast">
+    ✅ Đã thêm vào giỏ hàng!
+</div>
+<script src="js/main.js"></script>
+
+</body>
+</html>
